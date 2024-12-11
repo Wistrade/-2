@@ -8,6 +8,7 @@ using namespace std;
 class Complex
 {
     double re, im;
+
 public:
     Complex();
     Complex(const int&);

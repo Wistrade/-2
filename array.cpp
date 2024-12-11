@@ -83,7 +83,7 @@ void Array::sortIncreas() const
 
 void Array::sortDecreas() const
 {
-    sort(A, A + n, greater<number>());
+    sort(A, A + n, greater<Complex>());
 }
 
 void Array::changeElement(unsigned int i, number x)

@@ -4,9 +4,9 @@
 #include "complex.h"
 #include "number.h"
 
-Complex::Complex()
+Complex::Complex() : re(0), im(0)
 {
-
+    
 }
 
 Complex::Complex(const int& r)
@@ -18,7 +18,7 @@ Complex::Complex(const int& r)
 Complex Complex::operator^(int exponent)
 {
     if (exponent == 2) {
-        number result;
+        Complex result;
         result.re = re * re - im * im;
         result.im = 2 * re * im;
         return result;
